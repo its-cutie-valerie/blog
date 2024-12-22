@@ -21,6 +21,7 @@ const Article: React.FC = () => {
 
   return (
     <div>
+    <a href="/">Back to all articles</a>
       <ReactMarkdown children={content} remarkPlugins={[remarkGfm]} />
     </div>
   );
