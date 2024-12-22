@@ -1,0 +1,31 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Catppuccin Latte */
+  --latte-bg: #eff1f5;
+  --latte-text: #4c4f69;
+
+  /* Catppuccin Macchiato */
+  --macchiato-bg: #24273a;
+  --macchiato-text: #cad3f5;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Light Mode (Latte) */
+body {
+  background-color: var(--latte-bg);
+  color: var(--latte-text);
+  transition: background-color 0.2s, color 0.2s;
+}
+
+/* Dark Mode (Macchiato) */
+.dark-mode {
+  background-color: var(--macchiato-bg);
+  color: var(--macchiato-text);
+}
