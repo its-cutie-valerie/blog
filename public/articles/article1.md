@@ -8,7 +8,7 @@ Welcome to my blog! This is my first post. Here, I will share my thoughts on var
 
 In this blog, I will cover:
 
-- Technology
+- **Tech**nology
 - Programming
 - Personal Development
 - And much more!
