@@ -1,21 +1,23 @@
-// ...existing code...
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
-interface ArticleParams {
-  articleId: string;
-}
+type ArticleParams = {
+  [key: string]: string | undefined;
+  articleId?: string;
+};
 
 const Article: React.FC = () => {
   const { articleId } = useParams<ArticleParams>();
   const [content, setContent] = useState("");
 
   useEffect(() => {
-    fetch(`/articles/${articleId}.md`)
-      .then((response) => response.text())
-      .then((text) => setContent(text));
+    if (articleId) {
+      fetch(`/articles/${articleId}.md`)
+        .then((response) => response.text())
+        .then((text) => setContent(text));
+    }
   }, [articleId]);
 
   return (
@@ -27,4 +29,3 @@ const Article: React.FC = () => {
 };
 
 export default Article;
-// ...existing code...
