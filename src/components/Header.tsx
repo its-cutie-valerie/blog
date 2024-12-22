@@ -23,6 +23,7 @@ function Header() {
   return (
     <header>
       <h1>Val the Nerdy gal</h1>
+      <p>Welcome to my blog</p>
       <button onClick={handleToggle}>Toggle Dark Mode</button>
     </header>
   );
