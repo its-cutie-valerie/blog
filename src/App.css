@@ -3,6 +3,13 @@
   text-align: center;
 }
 
+.article-container{
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+  
+}
+
 a {
   color: #A64253;
   text-decoration: none;
