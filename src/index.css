@@ -3,8 +3,6 @@
   line-height: 1.5;
   font-weight: 400;
 
-  --bg: #200116;
-  --text: #D1B1C8;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -12,8 +10,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Light Mode (Latte) */
 body {
-  background-color: var(--bg);
+  background-color: #200116;
   color: #D1B1C8;
 }
