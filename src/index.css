@@ -3,13 +3,8 @@
   line-height: 1.5;
   font-weight: 400;
 
-  /* Catppuccin Latte */
-  --latte-bg: #eff1f5;
-  --latte-text: #4c4f69;
-
-  /* Catppuccin Macchiato */
-  --macchiato-bg: #24273a;
-  --macchiato-text: #cad3f5;
+  --bg: #200116;
+  --text: #D1B1C8;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -19,13 +14,6 @@
 
 /* Light Mode (Latte) */
 body {
-  background-color: var(--latte-bg);
-  color: var(--latte-text);
-  transition: background-color 0.2s, color 0.2s;
-}
-
-/* Dark Mode (Macchiato) */
-.dark-mode {
-  background-color: var(--macchiato-bg);
-  color: var(--macchiato-text);
+  background-color: var(--bg);
+  color: #D1B1C8;
 }

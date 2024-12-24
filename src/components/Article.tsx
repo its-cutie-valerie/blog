@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import "./Article.css";
 
 type ArticleParams = {
   [key: string]: string | undefined;
@@ -21,10 +22,12 @@ const Article: React.FC = () => {
   }, [articleId]);
 
   return (
-    <div>
-      <a href="/">Back to all articles</a>
+    <>
+    <a href="/">Back to all articles</a>
+    <div className="article-container">
       <ReactMarkdown children={content} remarkPlugins={[remarkGfm]} />
     </div>
+    </>
   );
 };
 

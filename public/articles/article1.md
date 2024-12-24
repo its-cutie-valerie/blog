@@ -17,6 +17,12 @@ In this blog, I will cover:
 
 I am a software developer with a passion for learning and sharing knowledge. I enjoy working on web development projects and exploring new technologies.
 
+```css
+body{
+    color: #fff;
+}
+```
+
 ## Conclusion
 
 Thank you for visiting my blog. Stay tuned for more posts!

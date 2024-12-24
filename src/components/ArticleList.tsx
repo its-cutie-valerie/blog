@@ -18,7 +18,7 @@ const ArticleList: React.FC<ArticleListProps> = () => {
     <div>
       <h1>Blog Articles</h1>
       <ul>
-        {articles.map(article => (
+        {articles.slice().reverse().map(article => (
           <li key={article}>
             <Link to={`/article/${article.replace('.md', '')}`}>
               {article.replace('.md', '')}
