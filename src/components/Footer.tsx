@@ -8,12 +8,12 @@ function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-        Made with <FaHeart color="red" /> by Valérie
+        Made with <FaHeart color="purple" /> by Valérie
         </a>
       </p>
       <nav>
-        <a href="https://github.com/its-cutie-valerie"           target="_blank"
-          rel="noopener noreferrer"style={{ margin: "0 0.5rem" }}>
+        <a href="https://github.com/its-cutie-valerie" target="_blank"
+          rel="noopener noreferrer" style={{ margin: "0 0.5rem" }}>
           Github
         </a>
         <a href="#link2"           target="_blank"
@@ -25,7 +25,6 @@ function Footer() {
           Linkedin
         </a>
       </nav>
-      {/* <a href="https://www.buymeacoffee.com/adorkababe" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" style={{ height: "60px", width: "217px" }} /></a> */}
     </footer>
   );
 }

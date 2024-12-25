@@ -10,7 +10,7 @@
 }
 
 a {
-  color: #A64253;
+  color: purple;
   text-decoration: none;
 }
 
@@ -45,15 +45,8 @@ blockquote {
 }
 
 code {
-  padding: 0.2rem 0.4rem;
   border-radius: 4px;
   font-family: 'Courier New', Courier, monospace;
-}
-
-pre {
-  padding: 1rem;
-  border-radius: 8px;
-  overflow-x: auto;
 }
 
 img {
@@ -77,4 +70,46 @@ th, td {
 th {
   background-color: #3498db;
   color: #fff;
+}
+.code-block-container {
+  position: relative; /* Needed for absolute positioning of copy button */
+  margin-bottom: 1rem; /* Space between code blocks */
+}
+
+.code-block-container pre { /* Target the <pre> element inside */
+    position: relative; /* Needed for absolute positioning of copy button */
+    padding-top: 2rem; /* Make room for button */
+}
+.code-block-container .copy-button {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+    z-index: 1; /* Ensure it's above the code */
+}
+
+.code-block-container .copy-button:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker on hover */
+}
+
+.copy-message {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 1000; /* Ensure it's on top */
 }

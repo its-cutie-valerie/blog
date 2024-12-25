@@ -23,6 +23,10 @@ body{
 }
 ```
 
+```html
+<html></html>
+```
+
 ## Conclusion
 
 Thank you for visiting my blog. Stay tuned for more posts!
