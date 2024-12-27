@@ -1,9 +1,9 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, ComponentPropsWithoutRef } from "react";
 import { useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { hopscotch } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { hopscotch } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { FaCopy } from "react-icons/fa";
 
@@ -44,13 +44,13 @@ const Article: React.FC = () => {
           children={content}
           remarkPlugins={[remarkGfm]}
           components={{
-            code({ node, inline, className, children, ...props }) {
+            code({ inline, className, children, ...props }: ComponentPropsWithoutRef<'code'> & { inline?: boolean }) {
               const match = /language-(\w+)/.exec(className || '');
               return !inline && match ? (
-                <div className="code-block-container" style={{ backgroundColor: '#200116' }}> {/* Container for copy button */}
+                <div className="code-block-container"> {/* Container for copy button */}
                   <SyntaxHighlighter
                     children={String(children).replace(/\n$/, '')}
-                    style={hopscotch}
+                    style={hopscotch as any}
                     language={match[1]}
                     PreTag="div"
                     {...props}
