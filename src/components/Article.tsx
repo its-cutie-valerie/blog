@@ -38,7 +38,7 @@ const Article: React.FC = () => {
 
   return (
     <>
-      <a href="/">Back to all articles</a>
+      <a href="/" style={{ textDecoration: 'underline' }}>Back to all articles</a>
       <div className="article-container">
         <ReactMarkdown
           children={content}

@@ -10,7 +10,7 @@
 }
 
 a {
-  color: purple;
+  color: #AA336A;
   text-decoration: none;
 }
 
@@ -72,19 +72,19 @@ th {
   color: #fff;
 }
 .code-block-container {
-  position: relative; /* Needed for absolute positioning of copy button */
-  margin-bottom: 1rem; /* Space between code blocks */
+  position: relative; 
+  margin-bottom: 1rem;
 }
 
-.code-block-container pre { /* Target the <pre> element inside */
-    position: relative; /* Needed for absolute positioning of copy button */
-    padding-top: 2rem; /* Make room for button */
+.code-block-container pre {
+    position: relative;
+    padding-top: 2rem;
 }
 .code-block-container .copy-button {
     position: absolute;
-    top: 0.5rem;
-    right: 1rem;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    top: 2rem;
+    right: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
     border: none;
     color: white;
     padding: 5px 10px;
@@ -94,12 +94,12 @@ th {
     font-size: 14px;
     cursor: pointer;
     border-radius: 4px;
-    transition: background-color 0.3s ease; /* Smooth hover transition */
-    z-index: 1; /* Ensure it's above the code */
+    transition: background-color 0.3s ease;
+    z-index: 1;
 }
 
 .code-block-container .copy-button:hover {
-    background-color: rgba(0, 0, 0, 0.8); /* Darker on hover */
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .copy-message {
@@ -111,5 +111,5 @@ th {
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
-    z-index: 1000; /* Ensure it's on top */
+    z-index: 1000;
 }
